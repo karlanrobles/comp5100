@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image and Text Input</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <div id="app">
+        <form method="post" action="{{ url_for('save_input') }}">
+            <input type="text" name="userInput" placeholder="Enter text...">
+            <button type="submit">Save</button>
+        </form>
+        <ul id="textList">
+            {% for input in user_inputs %}
+                <li>{{ input }}</li>
+            {% endfor %}
+        </ul>
+    </div>
+</body>
+</html>
+
