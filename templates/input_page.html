@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Input Page</title>
+</head>
+<body>
+    <form method="post" action="{{ url_for('process_input') }}">
+        <label for="userInput">Enter Text:</label>
+        <input type="text" name="userInput" id="userInput" required>
+        <button type="submit">Submit</button>
+    </form>
+
+    <form method="get" action="{{ url_for('display_page') }}" target="_blank">
+        <button type="submit">See User Opinions</button>
+    </form>
+</body>
+</html>
+
