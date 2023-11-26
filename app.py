@@ -1,17 +1,13 @@
-<<<<<<< HEAD
 from flask import Flask, render_template, request, redirect, url_for, session
-#py
-=======
 # app.py
 import time
 from flask import Flask, render_template, request, redirect, url_for
 import openai
 
->>>>>>> c53615d (sentiment analysis with openAI connected)
 app = Flask(__name__)
 
 # Replace 'YOUR_OPENAI_API_KEY' with your actual OpenAI API key
-openai.api_key = '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'
+openai.api_key ='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' 
 
 # Function for sentiment analysis using ChatGPT (OpenAI)
 def analyze_sentiment(user_input):
